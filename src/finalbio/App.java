@@ -23,7 +23,7 @@ public class App {
         FileReader f2 = new FileReader("src/data/algo2.txt");
         Eliminacion el = new Eliminacion();
         System.out.println(el.Solve(el.getReader(fr),el.getReader(f2)));
-        
+        System.out.println("Te amo pipe");
         }
         catch (Exception e){
             e.printStackTrace();

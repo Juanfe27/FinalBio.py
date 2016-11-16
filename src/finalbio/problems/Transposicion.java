@@ -34,17 +34,17 @@ public class Transposicion extends GenericProblem{
         int posInicial = 0;
         int tamanio = 0;
         boolean flag = true;
-        boolean firstOrSecond = false;
         for(int i = 0; i < original.length();i++){
-            if((original.charAt(i) != mutacion.charAt(i))&& !firstOrSecond){
+            if(original.charAt(i) != mutacion.charAt(i)){
                 if(flag){
                     posInicial = i;
                     flag = false;
                 }
-                tamanio++;
-                
+                tamanio++;                
             }
         }
+        System.out.println(posInicial + " " + tamanio);
+        return null;
     }
     
 }
